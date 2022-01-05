@@ -7,7 +7,9 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class DriverInstance  {
+import cucumber.api.testng.AbstractTestNGCucumberTests;
+
+public class DriverInstance extends AbstractTestNGCucumberTests {
 
 	private static final ThreadLocal<RemoteWebDriver> remoteWebdriver = new ThreadLocal<RemoteWebDriver>();
 	private static final ThreadLocal<WebDriverWait> wait = new  ThreadLocal<WebDriverWait>();
